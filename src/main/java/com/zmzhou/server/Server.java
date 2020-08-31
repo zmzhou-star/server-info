@@ -25,9 +25,11 @@ import com.zmzhou.server.utils.Arith;
 import com.zmzhou.server.utils.ServerUtils;
 
 /**
- * 服务器相关信息
- *
- * @author ruoyi
+ * @title Server
+ * @description 服务器相关信息
+ * @author zmzhou
+ * @version 1.0
+ * @date 2020/8/31 23:03
  */
 @ToString
 @Slf4j
