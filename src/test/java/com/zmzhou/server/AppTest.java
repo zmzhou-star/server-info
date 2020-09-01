@@ -17,9 +17,8 @@ public class AppTest {
      */
     @Test
     public void shouldAnswerWithTrue() {
-        Server server = new Server();
-        server.copyTo();
-        System.out.println("服务器信息："+ JSON.toJSONString(server));
-        Assert.assertNotNull(server);
+        ServerInfo serverInfo = new ServerInfo();
+        System.out.println("服务器信息："+ JSON.toJSONString(serverInfo));
+        Assert.assertNotNull(serverInfo);
     }
 }

@@ -1,11 +1,11 @@
 package com.zmzhou.server.utils;
 
-import lombok.extern.slf4j.Slf4j;
-
 import java.lang.management.ManagementFactory;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.Date;
+
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * @author zmzhou

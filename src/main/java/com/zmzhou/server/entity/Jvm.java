@@ -1,6 +1,4 @@
-package com.zmzhou.server.server;
-
-import lombok.ToString;
+package com.zmzhou.server.entity;
 
 import java.lang.management.ManagementFactory;
 
@@ -8,6 +6,8 @@ import org.apache.commons.lang3.time.DateFormatUtils;
 
 import com.zmzhou.server.utils.Arith;
 import com.zmzhou.server.utils.ServerUtils;
+
+import lombok.ToString;
 
 /**
  *  @title Jvm

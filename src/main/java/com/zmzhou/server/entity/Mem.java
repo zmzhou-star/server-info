@@ -1,9 +1,9 @@
-package com.zmzhou.server.server;
+package com.zmzhou.server.entity;
 
-
-import lombok.ToString;
 
 import com.zmzhou.server.utils.Arith;
+
+import lombok.ToString;
 
 /**
  * The type Mem.

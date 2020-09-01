@@ -1,5 +1,17 @@
 package com.zmzhou.server;
 
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Properties;
+
+import com.zmzhou.server.entity.Cpu;
+import com.zmzhou.server.entity.Jvm;
+import com.zmzhou.server.entity.Mem;
+import com.zmzhou.server.entity.Sys;
+import com.zmzhou.server.entity.SysFile;
+import com.zmzhou.server.utils.Arith;
+import com.zmzhou.server.utils.ServerUtils;
+
 import lombok.ToString;
 import lombok.extern.slf4j.Slf4j;
 import oshi.SystemInfo;
@@ -12,28 +24,18 @@ import oshi.software.os.OSFileStore;
 import oshi.software.os.OperatingSystem;
 import oshi.util.Util;
 
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Properties;
-
-import com.zmzhou.server.server.Cpu;
-import com.zmzhou.server.server.Jvm;
-import com.zmzhou.server.server.Mem;
-import com.zmzhou.server.server.Sys;
-import com.zmzhou.server.server.SysFile;
-import com.zmzhou.server.utils.Arith;
-import com.zmzhou.server.utils.ServerUtils;
-
 /**
- * @title Server
- * @description 服务器相关信息
+ * The type Server.
+ *
  * @author zmzhou
  * @version 1.0
- * @date 2020/8/31 23:03
+ * @title Server
+ * @description 服务器相关信息
+ * @date 2020 /8/31 23:03
  */
 @ToString
 @Slf4j
-public class Server {
+public class ServerInfo {
     /**
      * The constant OSHI_WAIT_SECOND.
      */
@@ -63,7 +65,25 @@ public class Server {
      * 磁盘相关信息
      */
     private List<SysFile> sysFiles = new LinkedList<>();
-    
+
+    /**
+     * Instantiates a new Server.
+     */
+    public ServerInfo() {
+        SystemInfo si = new SystemInfo();
+        HardwareAbstractionLayer hal = si.getHardware();
+        // 设置CPU信息       
+        setCpuInfo(hal.getProcessor());
+        // 设置内存信息
+        setMemInfo(hal.getMemory());
+        // 设置服务器信息
+        setSysInfo();
+        // 设置Java虚拟机信息
+        setJvmInfo();
+        // 设置磁盘信息
+        setSysFiles(si.getOperatingSystem());
+    }
+
     /**
      * Gets cpu.
      *
@@ -155,23 +175,6 @@ public class Server {
     }
     
     /**
-     * Copy to.
-     */
-    public void copyTo() {
-        SystemInfo si = new SystemInfo();
-        HardwareAbstractionLayer hal = si.getHardware();
-
-        setCpuInfo(hal.getProcessor());
-
-        setMemInfo(hal.getMemory());
-
-        setSysInfo();
-
-        setJvmInfo();
-        setSysFiles(si.getOperatingSystem());
-    }
-    
-    /**
      * 设置CPU信息
      *
      * @param processor the processor
@@ -222,7 +225,7 @@ public class Server {
     }
     
     /**
-     * 设置Java虚拟机
+     * 设置Java虚拟机信息
      */
     private void setJvmInfo() {
         Properties props = System.getProperties();
