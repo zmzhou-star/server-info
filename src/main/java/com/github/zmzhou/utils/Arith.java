@@ -1,4 +1,4 @@
-package com.zmzhou.server.utils;
+package com.github.zmzhou.utils;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;

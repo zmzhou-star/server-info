@@ -1,4 +1,4 @@
-package com.zmzhou.server.utils;
+package com.github.zmzhou.utils;
 
 import java.lang.management.ManagementFactory;
 import java.net.InetAddress;

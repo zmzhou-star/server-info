@@ -1,4 +1,4 @@
-package com.zmzhou.server.entity;
+package com.github.zmzhou.entity;
 
 import lombok.Data;
 

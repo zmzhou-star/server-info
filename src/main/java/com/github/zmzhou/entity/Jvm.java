@@ -1,11 +1,11 @@
-package com.zmzhou.server.entity;
+package com.github.zmzhou.entity;
 
 import java.lang.management.ManagementFactory;
 
 import org.apache.commons.lang3.time.DateFormatUtils;
 
-import com.zmzhou.server.utils.Arith;
-import com.zmzhou.server.utils.ServerUtils;
+import com.github.zmzhou.utils.Arith;
+import com.github.zmzhou.utils.ServerUtils;
 
 import lombok.ToString;
 

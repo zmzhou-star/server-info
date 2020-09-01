@@ -1,9 +1,9 @@
-package com.zmzhou.server.entity;
+package com.github.zmzhou.entity;
 
-
-import com.zmzhou.server.utils.Arith;
 
 import lombok.ToString;
+
+import com.github.zmzhou.utils.Arith;
 
 /**
  *  @title Cpu

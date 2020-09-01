@@ -1,4 +1,4 @@
-package com.zmzhou.server;
+package com.github.zmzhou;
 
 import org.junit.Assert;
 import org.junit.Test;

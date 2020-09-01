@@ -1,16 +1,4 @@
-package com.zmzhou.server;
-
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Properties;
-
-import com.zmzhou.server.entity.Cpu;
-import com.zmzhou.server.entity.Jvm;
-import com.zmzhou.server.entity.Mem;
-import com.zmzhou.server.entity.Sys;
-import com.zmzhou.server.entity.SysFile;
-import com.zmzhou.server.utils.Arith;
-import com.zmzhou.server.utils.ServerUtils;
+package com.github.zmzhou;
 
 import lombok.ToString;
 import lombok.extern.slf4j.Slf4j;
@@ -23,6 +11,18 @@ import oshi.software.os.FileSystem;
 import oshi.software.os.OSFileStore;
 import oshi.software.os.OperatingSystem;
 import oshi.util.Util;
+
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Properties;
+
+import com.github.zmzhou.entity.Cpu;
+import com.github.zmzhou.entity.Jvm;
+import com.github.zmzhou.entity.Mem;
+import com.github.zmzhou.entity.Sys;
+import com.github.zmzhou.entity.SysFile;
+import com.github.zmzhou.utils.Arith;
+import com.github.zmzhou.utils.ServerUtils;
 
 /**
  * The type Server.
@@ -67,7 +67,11 @@ public class ServerInfo {
     private List<SysFile> sysFiles = new LinkedList<>();
 
     /**
-     * Instantiates a new Server.
+     * @description Instantiates a new Server.
+     * 构造器-生成服务器系统信息
+     * @return ServerInfo
+     * @author zmzhou
+     * @date 2020/9/1 21:28
      */
     public ServerInfo() {
         SystemInfo si = new SystemInfo();
