@@ -4,12 +4,10 @@
 Java获取服务器系统信息
 
 #maven打包命令
-mvn clean install -X
+`mvn clean install -X`
 
 #上传到GitHub
-<code>
-mvn deploy -Dregistry=https://maven.pkg.github.com/zmzhou-star -Dtoken=PAT_TOKEN -X
-</code>
+`mvn deploy -Dregistry=https://maven.pkg.github.com/zmzhou-star -Dtoken=PAT_TOKEN -X`
 
 #### 软件架构
 软件架构说明
@@ -21,22 +19,20 @@ https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
 #### 安装教程
 
 1. Add this to pom.xml:
-<code>
-    <dependency>
-      <groupId>com.github.zmzhou</groupId>
-      <artifactId>server-info</artifactId>
-      <version>1.0</version>
-    </dependency>
-</code>
+
+`<dependency>
+  <groupId>com.github.zmzhou</groupId>
+  <artifactId>server-info</artifactId>
+  <version>1.0</version>
+</dependency>`
+
 2. Run via command line
-$ <code>mvn install</code>
+$ `mvn install`
 #### 使用说明
 
 1.  https://github.com/zmzhou-star/server-info/packages/380676?version=1.0
 
-<code>
-ServerInfo serverInfo = new ServerInfo();
-</code>
+`ServerInfo serverInfo = new ServerInfo();`
 
 #### 参与贡献
 

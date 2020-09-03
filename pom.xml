@@ -16,6 +16,14 @@
             <email>zmzhou8@qq.com</email>
         </developer>
     </developers>
+    <!--打包上传到github-->
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub zmzhou-star Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/zmzhou-star/server-info</url>
+        </repository>
+    </distributionManagement>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -92,12 +100,4 @@
             </plugins>
         </pluginManagement>
     </build>
-    <!--打包上传到github-->
-    <distributionManagement>
-        <repository>
-            <id>github</id>
-            <name>GitHub zmzhou-star Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/zmzhou-star/server-info</url>
-        </repository>
-    </distributionManagement>
 </project>
