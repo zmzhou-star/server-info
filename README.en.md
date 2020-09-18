@@ -11,26 +11,31 @@ Software architecture description
 
 软件架构说明
 依赖：
-https://mvnrepository.com/artifact/com.github.oshi/oshi-core
-https://mvnrepository.com/artifact/com.alibaba/fastjson
-https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
+* https://mvnrepository.com/artifact/com.github.oshi/oshi-core
+* https://mvnrepository.com/artifact/com.alibaba/fastjson
+* https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
 
 #### Installation
 
 1. Add this to pom.xml:
-`<dependency>
+```
+<dependency>
   <groupId>com.github.zmzhou</groupId>
   <artifactId>server-info</artifactId>
   <version>1.0</version>
-</dependency>`
+</dependency>
+```
+
 2. Run via command line
 $ `mvn install`
 
 #### Instructions
 
-1.  https://github.com/zmzhou-star/server-info/packages/380676?version=1.0
+1.  [https://github.com/zmzhou-star/server-info/packages/380676?version=1.0](https://github.com/zmzhou-star/server-info/packages/380676?version=1.0)
 
-`ServerInfo serverInfo = new ServerInfo();`
+```
+ServerInfo serverInfo = new ServerInfo();
+```
 
 #### Contribution
 

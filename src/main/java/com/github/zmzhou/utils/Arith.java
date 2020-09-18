@@ -4,10 +4,12 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 
 /**
- *  @title Arith
- *  @Description 精确的浮点数运算
- *  @author zmzhou
- *  @Date 2020/08/29 14:15
+ * 精确的浮点数运算
+ * @author zmzhou
+ * @version 1.0
+ * <p>
+ * date 2020/9/18 20:48
+ * </p>
  */
 public final class Arith {
 	

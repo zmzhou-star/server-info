@@ -10,10 +10,10 @@ import com.github.zmzhou.utils.ServerUtils;
 import lombok.ToString;
 
 /**
- *  @title Jvm
- *  @Description JVM相关信息
- *  @author zmzhou
- *  @Date 2020/08/29 15:01
+ * JVM相关信息
+ * @author zmzhou
+ * @version 1.0
+ * date 2020/9/18 20:52
  */
 @ToString
 public class Jvm {

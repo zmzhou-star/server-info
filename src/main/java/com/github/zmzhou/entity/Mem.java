@@ -6,11 +6,10 @@ import com.github.zmzhou.utils.Arith;
 import lombok.ToString;
 
 /**
- * The type Mem.
- *
+ * 內存相关信息
  * @author zmzhou
- * @description 內存相关信息
- * @date 2020 /07/02 20:42
+ * @version 1.0
+ * date 2020/9/18 20:52
  */
 @ToString
 public class Mem {

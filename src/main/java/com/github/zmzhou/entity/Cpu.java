@@ -1,15 +1,17 @@
 package com.github.zmzhou.entity;
 
 
-import lombok.ToString;
-
 import com.github.zmzhou.utils.Arith;
 
+import lombok.ToString;
+
 /**
- *  @title Cpu
- *  @Description CPU相关信息
- *  @author zmzhou
- *  @Date 2020/08/29 15:00
+ * CPU相关信息
+ * @author zmzhou
+ * @version 1.0
+ * <p>
+ * date 2020/9/18 20:48
+ * </p>
  */
 @ToString
 public class Cpu {

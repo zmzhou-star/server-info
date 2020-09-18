@@ -3,10 +3,10 @@ package com.github.zmzhou.entity;
 import lombok.Data;
 
 /**
+ * 系统相关信息
  * @author zmzhou
- * @title Sys
- * @Description 系统相关信息
- * @Date 2020/08/29 14:59
+ * @version 1.0
+ * date 2020/9/18 20:51
  */
 @Data
 public class Sys {

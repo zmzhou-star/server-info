@@ -2,6 +2,7 @@
 
 #### 介绍
 Java获取服务器系统信息
+可以实时监控服务器资源使用情况
 
 #maven打包命令
 `mvn clean install -X`
@@ -12,27 +13,36 @@ Java获取服务器系统信息
 #### 软件架构
 软件架构说明
 依赖：
-https://mvnrepository.com/artifact/com.github.oshi/oshi-core
-https://mvnrepository.com/artifact/com.alibaba/fastjson
-https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
+* https://mvnrepository.com/artifact/com.github.oshi/oshi-core
+* https://mvnrepository.com/artifact/com.alibaba/fastjson
+* https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
 
 #### 安装教程
 
 1. Add this to pom.xml:
 
-`<dependency>
+```
+<dependency>
   <groupId>com.github.zmzhou</groupId>
   <artifactId>server-info</artifactId>
   <version>1.0</version>
-</dependency>`
+</dependency>
+```
 
 2. Run via command line
 $ `mvn install`
 #### 使用说明
 
-1.  https://github.com/zmzhou-star/server-info/packages/380676?version=1.0
+1.  [https://github.com/zmzhou-star/server-info/packages/380676?version=1.0](https://github.com/zmzhou-star/server-info/packages/380676?version=1.0)
 
-`ServerInfo serverInfo = new ServerInfo();`
+```
+ServerInfo serverInfo = new ServerInfo();
+```
+
+#### 上传本地jar包到maven中央仓库
+* Sonatype OSSRH官方介绍地址：https://central.sonatype.org/pages/ossrh-guide.html
+* 中央组件要求：https://central.sonatype.org/pages/requirements.html
+* Maven部署到OSSRH参考配置文档： https://central.sonatype.org/pages/apache-maven.html
 
 #### 参与贡献
 

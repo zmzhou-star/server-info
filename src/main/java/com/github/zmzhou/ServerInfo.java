@@ -1,17 +1,5 @@
 package com.github.zmzhou;
 
-import lombok.ToString;
-import lombok.extern.slf4j.Slf4j;
-import oshi.SystemInfo;
-import oshi.hardware.CentralProcessor;
-import oshi.hardware.CentralProcessor.TickType;
-import oshi.hardware.GlobalMemory;
-import oshi.hardware.HardwareAbstractionLayer;
-import oshi.software.os.FileSystem;
-import oshi.software.os.OSFileStore;
-import oshi.software.os.OperatingSystem;
-import oshi.util.Util;
-
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Properties;
@@ -24,14 +12,25 @@ import com.github.zmzhou.entity.SysFile;
 import com.github.zmzhou.utils.Arith;
 import com.github.zmzhou.utils.ServerUtils;
 
+import lombok.ToString;
+import lombok.extern.slf4j.Slf4j;
+import oshi.SystemInfo;
+import oshi.hardware.CentralProcessor;
+import oshi.hardware.CentralProcessor.TickType;
+import oshi.hardware.GlobalMemory;
+import oshi.hardware.HardwareAbstractionLayer;
+import oshi.software.os.FileSystem;
+import oshi.software.os.OSFileStore;
+import oshi.software.os.OperatingSystem;
+import oshi.util.Util;
+
 /**
- * The type Server.
- *
+ * 服务器相关信息
+ * <p>
+ * date 2020/9/18 20:48
+ * </p>
  * @author zmzhou
  * @version 1.0
- * @title Server
- * @description 服务器相关信息
- * @date 2020 /8/31 23:03
  */
 @ToString
 @Slf4j
@@ -67,11 +66,9 @@ public class ServerInfo {
     private List<SysFile> sysFiles = new LinkedList<>();
 
     /**
-     * @description Instantiates a new Server.
      * 构造器-生成服务器系统信息
-     * @return ServerInfo
      * @author zmzhou
-     * @date 2020/9/1 21:28
+     * date 2020/9/1 21:28
      */
     public ServerInfo() {
         SystemInfo si = new SystemInfo();

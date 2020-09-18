@@ -8,9 +8,12 @@ import java.util.Date;
 import lombok.extern.slf4j.Slf4j;
 
 /**
+ * 工具类
+ * <p>
+ * date 2020/9/18 20:48
+ * </p>
  * @author zmzhou
- * @description 工具类
- * @date 2020/07/02 16:52
+ * @version 1.0
  */
 @Slf4j
 public final class ServerUtils {
@@ -66,7 +69,7 @@ public final class ServerUtils {
 	 * 获取服务器启动时间
 	 * @return Date
 	 * @author zmzhou
-	 * @date 2020/08/29 14:31
+	 * date 2020/08/29 14:31
 	 */
 	public static Date getServerStartDate() {
 		long time = ManagementFactory.getRuntimeMXBean().getStartTime();
@@ -75,16 +78,19 @@ public final class ServerUtils {
 	
 	/**
 	 * 计算两个时间差
+	 * @param endDate 截止时间
+	 * @param startDate 开始时间
+	 * @return 时间差描述
 	 * @author zmzhou
-	 * @date 2020/08/29 14:31
+	 * date 2020/9/18 20:48
 	 */
-	public static String getDatePoor(Date endDate, Date nowDate) {
+	public static String getDatePoor(Date endDate, Date startDate) {
 		long nm = 1000L * 60;
 		long nh = nm * 60;
 		long nd = nh * 24;
 		// long ns = 1000
 		// 获得两个时间的毫秒时间差异
-		long diff = endDate.getTime() - nowDate.getTime();
+		long diff = endDate.getTime() - startDate.getTime();
 		// 计算差多少天
 		long day = diff / nd;
 		// 计算差多少小时
