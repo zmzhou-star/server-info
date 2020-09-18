@@ -40,9 +40,9 @@ ServerInfo serverInfo = new ServerInfo();
 ```
 
 #### 上传本地jar包到maven中央仓库
-* Sonatype OSSRH官方介绍地址：https://central.sonatype.org/pages/ossrh-guide.html
-* 中央组件要求：https://central.sonatype.org/pages/requirements.html
-* Maven部署到OSSRH参考配置文档： https://central.sonatype.org/pages/apache-maven.html
+* Sonatype OSSRH官方介绍地址：[https://central.sonatype.org/pages/ossrh-guide.html](https://central.sonatype.org/pages/ossrh-guide.html)
+* 中央组件要求：[https://central.sonatype.org/pages/requirements.html](https://central.sonatype.org/pages/requirements.html)
+* Maven部署到OSSRH参考配置文档： [https://central.sonatype.org/pages/apache-maven.html](https://central.sonatype.org/pages/apache-maven.html)
 
 #### 参与贡献
 

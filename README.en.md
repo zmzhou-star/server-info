@@ -37,6 +37,11 @@ $ `mvn install`
 ServerInfo serverInfo = new ServerInfo();
 ```
 
+#### Upload local jar package to maven central warehouse
+* Sonatype OSSRH Official introduction address：[https://central.sonatype.org/pages/ossrh-guide.html](https://central.sonatype.org/pages/ossrh-guide.html)
+* Central component requirements：[https://central.sonatype.org/pages/requirements.html](https://central.sonatype.org/pages/requirements.html)
+* Maven deployment to OSSRH reference configuration document： [https://central.sonatype.org/pages/apache-maven.html](https://central.sonatype.org/pages/apache-maven.html)
+
 #### Contribution
 
 1.  Fork the repository
