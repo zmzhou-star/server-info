@@ -8,7 +8,7 @@
     <version>1.0</version>
 
     <name>server-info</name>
-    <url>https://github.com/zmzhou-star/server-info</url>
+    <url>https://github.com/zmzhou-star/OSSRH-60750</url>
     <description>获取服务器系统信息</description>
     <developers>
         <developer>
@@ -34,9 +34,9 @@
         </repository>
     </distributionManagement>
     <scm>
-        <connection>scm:git:git://github.com:zmzhou-star/server-info.git</connection>
-        <developerConnection>scm:git:ssh://github.com:zmzhou-star/server-info.git</developerConnection>
-        <url>https://github.com/zmzhou-star/server-info/tree/master</url>
+        <connection>scm:git:git://github.com:zmzhou-star/OSSRH-60750.git</connection>
+        <developerConnection>scm:git:ssh://github.com:zmzhou-star/OSSRH-60750.git</developerConnection>
+        <url>https://github.com/zmzhou-star/OSSRH-60750/tree/master</url>
     </scm>
     <licenses>
         <license>
