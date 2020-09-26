@@ -8,7 +8,7 @@
     <version>1.0</version>
 
     <name>server-info</name>
-    <url>https://github.com/zmzhou-star/server-info</url>
+    <url>https://github.com/zmzhou-star/OSSRH-60750</url>
     <description>获取服务器系统信息</description>
     <developers>
         <developer>
@@ -30,13 +30,13 @@
         </snapshotRepository>
         <repository>
             <id>ossrh</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
         </repository>
     </distributionManagement>
     <scm>
-        <connection>scm:git:git://github.com:zmzhou-star/server-info.git</connection>
-        <developerConnection>scm:git:ssh://github.com:zmzhou-star/server-info.git</developerConnection>
-        <url>https://github.com/zmzhou-star/server-info/tree/master</url>
+        <connection>scm:git:git://github.com:zmzhou-star/OSSRH-60750.git</connection>
+        <developerConnection>scm:git:ssh://github.com:zmzhou-star/OSSRH-60750.git</developerConnection>
+        <url>https://github.com/zmzhou-star/OSSRH-60750/tree/master</url>
     </scm>
     <licenses>
         <license>
@@ -128,7 +128,7 @@
     因此通常将这些执行与常规构建配置隔离开并移入配置文件中。然后，通过激活配置文件执行部署时，将依次使用此配置文件。-->
     <profiles>
         <profile>
-            <id>release</id>
+            <id>ossrh</id>
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
@@ -145,6 +145,11 @@
                             <nexusUrl>https://oss.sonatype.org/</nexusUrl>
                             <autoReleaseAfterClose>true</autoReleaseAfterClose>
                         </configuration>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-scm-plugin</artifactId>
+                        <version>1.8.1</version>
                     </plugin>
                     <!--使用Maven发布插件执行发布部署-->
                     <plugin>
@@ -176,6 +181,13 @@
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-javadoc-plugin</artifactId>
                         <version>2.9.1</version>
+                        <configuration>
+                            <aggregate>true</aggregate>
+                            <charset>UTF-8</charset>
+                            <encoding>UTF-8</encoding>
+                            <docencoding>UTF-8</docencoding>
+                            <additionalparam>-Xdoclint:none</additionalparam>
+                        </configuration>
                         <executions>
                             <execution>
                                 <id>attach-javadocs</id>
