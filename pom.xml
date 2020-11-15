@@ -58,21 +58,21 @@
         <dependency>
             <groupId>com.github.oshi</groupId>
             <artifactId>oshi-core</artifactId>
-            <version>5.2.4</version>
+            <version>[5.2.4,)</version>
         </dependency>
         <!-- 阿里JSON解析器 -->
         <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
-            <version>1.2.73</version>
+            <version>[1.2.73,)</version>
         </dependency>
         <!--常用工具类 -->
         <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
-            <version>3.11</version>
+            <version>[3.11,)</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
