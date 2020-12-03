@@ -222,7 +222,7 @@ public class ServerInfo {
         sys.setComputerIp(ServerUtils.getHostIp());
         sys.setOsName(props.getProperty("os.name"));
         sys.setOsArch(props.getProperty("os.arch"));
-        sys.setUserDir(props.getProperty("user.dir"));
+        sys.setUserDir(ServerUtils.delimiterConversion(props.getProperty("user.dir")));
     }
     
     /**
@@ -234,7 +234,7 @@ public class ServerInfo {
         jvm.setMax(Runtime.getRuntime().maxMemory());
         jvm.setFree(Runtime.getRuntime().freeMemory());
         jvm.setVersion(props.getProperty("java.version"));
-        jvm.setHome(props.getProperty("java.home"));
+        jvm.setHome(ServerUtils.delimiterConversion(props.getProperty("java.home")));
     }
     
     /**
@@ -250,7 +250,7 @@ public class ServerInfo {
             long total = fs.getTotalSpace();
             long used = total - free;
             SysFile sysFile = new SysFile();
-            sysFile.setDirName(fs.getMount());
+            sysFile.setDirName(ServerUtils.delimiterConversion(fs.getMount()));
             sysFile.setSysTypeName(fs.getType());
             sysFile.setTypeName(fs.getName());
             sysFile.setTotal(convertFileSize(total));

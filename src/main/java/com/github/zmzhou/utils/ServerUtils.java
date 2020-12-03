@@ -101,4 +101,15 @@ public final class ServerUtils {
 		// long sec = diff % nd % nh % nm / ns
 		return day + "天" + hour + "小时" + min + "分钟";
 	}
+
+	/**
+	 * 分隔符转换（\ -> /） 
+	 * @param value 值
+	 * @return value
+	 * @author zmzhou
+	 * @date 2020/12/3 17:09
+	 */
+	public static String delimiterConversion(String value){
+		return value.replaceAll("\\\\", "/");
+	}
 }
