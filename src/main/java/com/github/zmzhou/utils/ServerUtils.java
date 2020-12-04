@@ -1,9 +1,13 @@
 package com.github.zmzhou.utils;
 
 import java.lang.management.ManagementFactory;
+import java.net.Inet4Address;
 import java.net.InetAddress;
+import java.net.NetworkInterface;
+import java.net.SocketException;
 import java.net.UnknownHostException;
 import java.util.Date;
+import java.util.Enumeration;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -45,8 +49,27 @@ public final class ServerUtils {
 	 */
 	public static String getHostIp() {
 		try {
-			return InetAddress.getLocalHost().getHostAddress();
-		} catch (UnknownHostException e) {
+			// 得到本机所有的物理网络接口和虚拟机等软件利用本机的物理网络接口创建的逻辑网络接口的信息
+			Enumeration<NetworkInterface> networkInterfaces = NetworkInterface.getNetworkInterfaces();
+			while (networkInterfaces.hasMoreElements()) {
+				NetworkInterface netInterface = networkInterfaces.nextElement();
+				if (netInterface.isLoopback() || netInterface.isVirtual() || !netInterface.isUp()) {
+					continue;
+				}
+				Enumeration<InetAddress> inetAddresses = netInterface.getInetAddresses();
+				while (inetAddresses.hasMoreElements()) {
+					InetAddress inetAddress = inetAddresses.nextElement();
+					// IPV4
+					if (inetAddress instanceof Inet4Address) {
+						String ip = inetAddress.getHostAddress();
+						// 排除虚拟IP
+						if (!ip.endsWith(".1")) {
+							return ip;
+						}
+					}
+				}
+			}
+		} catch (SocketException e) {
 			log.error("获取IP地址异常", e);
 		}
 		return "127.0.0.1";
