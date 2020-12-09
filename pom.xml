@@ -65,7 +65,7 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
-            <version>[1.2.73,)</version>
+            <version>[1.2.75,)</version>
         </dependency>
         <!--常用工具类 -->
         <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
