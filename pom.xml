@@ -144,6 +144,12 @@
             </build>
             <!--打包上传到github-->
             <distributionManagement>
+                <!--<repository>
+                    <id>github</id>
+                    <name>GitHub zmzhou-star Apache Maven Packages</name>
+                    <url>https://maven.pkg.github.com/zmzhou-star/server-info</url>
+                </repository>-->
+                <!-- 打包上传到maven中央仓库 -->
                 <snapshotRepository>
                     <id>ossrh</id>
                     <url>https://oss.sonatype.org/content/repositories/snapshots</url>
