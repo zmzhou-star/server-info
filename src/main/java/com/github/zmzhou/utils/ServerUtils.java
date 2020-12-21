@@ -126,11 +126,11 @@ public final class ServerUtils {
 	}
 
 	/**
-	 * 分隔符转换（\ -> /） 
+	 * 分隔符转换
 	 * @param value 值
 	 * @return value
 	 * @author zmzhou
-	 * @date 2020/12/3 17:09
+	 * date 2020/12/3 17:09
 	 */
 	public static String delimiterConversion(String value){
 		return value.replaceAll("\\\\", "/");
