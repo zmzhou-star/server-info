@@ -3,8 +3,6 @@ package com.github.zmzhou.utils;
 import org.junit.Assert;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 /**
  * SnowFlakeTest
  * @author zmzhou
