@@ -16,7 +16,7 @@
             <email>zmzhou8@qq.com</email>
         </developer>
     </developers>
-    
+
     <scm>
         <connection>scm:git:git://github.com:zmzhou-star/OSSRH-60750.git</connection>
         <developerConnection>scm:git:ssh://github.com:zmzhou-star/OSSRH-60750.git</developerConnection>
@@ -62,7 +62,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.12</version>
+            <version>1.18.16</version>
             <optional>true</optional>
         </dependency>
         <dependency>
