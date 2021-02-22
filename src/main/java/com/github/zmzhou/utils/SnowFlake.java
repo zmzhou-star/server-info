@@ -14,7 +14,7 @@ public class SnowFlake {
 	/**
 	 * 起始的时间戳，可设置系统部署之日时间戳
 	 */
-	private static final long START_STMP = 1610700996688L;
+	private static final long START_STMP = 1613994923346L;
 
 	/**
 	 * 每一部分占用的位数
