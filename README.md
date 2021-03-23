@@ -22,10 +22,11 @@ Java获取服务器系统信息
 1. Add this to pom.xml:
 
 ```
+<!-- https://mvnrepository.com/artifact/com.github.zmzhou-star/server-info -->
 <dependency>
-  <groupId>com.github.zmzhou-star</groupId>
-  <artifactId>server-info</artifactId>
-  <version>1.0</version>
+    <groupId>com.github.zmzhou-star</groupId>
+    <artifactId>server-info</artifactId>
+    <version>[1.0,)</version>
 </dependency>
 ```
 
