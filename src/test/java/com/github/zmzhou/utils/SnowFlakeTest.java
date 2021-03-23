@@ -7,7 +7,7 @@ import org.junit.Test;
  * SnowFlakeTest
  * @author zmzhou
  * @version 1.0
- * @date 2021/1/15 16:42
+ * date 2021/1/15 16:42
  */
 public class SnowFlakeTest {
 

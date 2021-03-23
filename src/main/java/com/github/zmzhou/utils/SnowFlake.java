@@ -7,7 +7,7 @@ package com.github.zmzhou.utils;
  *
  * @author zmzhou
  * @version 1.0
- * @date 2021 /1/15 16:34
+ * date 2021/1/15 16:34
  */
 public class SnowFlake {
 
