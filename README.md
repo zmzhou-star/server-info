@@ -22,6 +22,7 @@ Java获取服务器系统信息
 1. Add this to pom.xml:
 
 ```
+<!-- https://mvnrepository.com/artifact/com.github.zmzhou-star/server-info -->
 <dependency>
   <groupId>com.github.zmzhou-star</groupId>
   <artifactId>server-info</artifactId>
@@ -30,7 +31,9 @@ Java获取服务器系统信息
 ```
 
 2. Run via command line
-$ `mvn install`
+```shell
+$ mvn install
+```
 #### 使用说明
 
 1.  [https://github.com/zmzhou-star/server-info/packages/380676?version=1.0](https://github.com/zmzhou-star/server-info/packages/380676?version=1.0)
@@ -38,6 +41,10 @@ $ `mvn install`
 ```
 ServerInfo serverInfo = new ServerInfo();
 ```
+#### 使用示例
+![easyboot](docs/easyboot.png)
+
+- 项目地址：[https://gitee.com/zmzhou-star/easyboot](https://gitee.com/zmzhou-star/easyboot)
 
 #### 上传本地jar包到maven中央仓库
 * Sonatype OSSRH官方介绍地址：[https://central.sonatype.org/pages/ossrh-guide.html](https://central.sonatype.org/pages/ossrh-guide.html)
