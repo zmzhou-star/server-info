@@ -5,7 +5,7 @@
 
     <groupId>com.github.zmzhou-star</groupId>
     <artifactId>server-info</artifactId>
-    <version>1.0</version>
+    <version>1.0.1</version>
 
     <name>server-info</name>
     <url>https://github.com/zmzhou-star/OSSRH-60750</url>
